@@ -1,0 +1,27 @@
+html, body{
+    height: 100%;
+    text-align: left;
+}
+.rating:hover .rating-star:hover,
+.rating:hover .rating-star:hover ~ .rating-star,
+.rating-input:checked ~ .rating-star {
+    background-position: 0 0;
+}
+.rating-star,
+.rating:hover .rating-star {
+    float: right;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url('star.png') 0 -16px;
+}
+.rating{
+    width: 100px;
+
+}
+.rating-star{
+    cursor: pointer;
+}
+.rating-input{
+    display: none;
+}
